@@ -17,6 +17,7 @@ require 'rrod/rails'
 
 module Dummy
   class Application < ::Rails::Application
+    config.consider_all_requests_local = Rails.env.development?
     config.cache_classes = !Rails.env.development?
     config.eager_load = true
     config.active_support.deprecation = :stderr
