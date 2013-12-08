@@ -5,7 +5,7 @@ describe Rrod::Engine do
     let(:client) { Rrod.configuration.client }
 
     it 'configures the rrod client' do
-      expect(client.nodes.first.host).to eq('first.host.information')
+      expect(client.nodes.first.host).to eq('0.0.0.0')
     end
 
   end

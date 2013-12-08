@@ -3,6 +3,7 @@
 .bundle
 .config
 .ruby-*
+.tmp
 .yardoc
 Gemfile.lock
 InstalledFiles

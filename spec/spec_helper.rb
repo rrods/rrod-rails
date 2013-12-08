@@ -6,6 +6,7 @@ require 'rails/test_help'
 require 'rspec/rails'
 require 'pry'
 require 'capybara/rspec'
+require 'rrod/test_server/rspec'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
@@ -15,3 +16,6 @@ RSpec.configure do |config|
   config.filter_run :focus
   config.order = 'random'
 end
+
+Rrod.configuration.test_server_yml = File.expand_path('../support/test_server.yml', __FILE__)
+Rrod::TestServer::RSpec.enable!

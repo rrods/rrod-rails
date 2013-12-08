@@ -1,3 +1,5 @@
 -
-  :host: first.host.information
+  :host: 0.0.0.0
+  :http_port: 15000
+  :pb_port: 15001
   

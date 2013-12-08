@@ -5,6 +5,7 @@ gemspec
 
 # custom development
 gem "rrod", github: "rrods/rrod"
+# gem "rrod", path: '../rrod'
 
 # rails app
 gem "haml"

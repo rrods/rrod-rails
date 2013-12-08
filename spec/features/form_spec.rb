@@ -3,16 +3,24 @@ require 'spec_helper'
 describe "using Rrod::Model in a form" do
 
   it "can be passed to form_for" do
-    visit "/beasts/new"
+    visit new_beast_path
     expect(page).to have_selector('form#new_beast')
   end
 
   describe "new" do
-    it "will route to create"
+    it "will route to create" do
+      visit new_beast_path
+      expect(page).to have_selector("form[action='#{beasts_path}']")
+    end
   end
 
   describe "persisted" do
-    it "will route to update"
+    let(:beast) { Beast.new(id: 'chimera', name: 'Chimera').tap(&:save) }
+
+    it "will route to update" do
+      visit edit_beast_path(beast)
+      expect(page).to have_selector("form[action='#{beast_path(beast)}']")
+    end
   end
 
   describe "schemaless" do
