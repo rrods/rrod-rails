@@ -1,4 +1,4 @@
 root: /tmp/riak-client-test-server
-source: /Users/adamhunter/Downloads/riak-1.4.2/bin
+source: /usr/local/riak-1.4.2/bin
 
 
