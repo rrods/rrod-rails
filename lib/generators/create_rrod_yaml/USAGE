@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate create_rrod_yaml Thing
+
+    This will create:
+        what/will/it/create
