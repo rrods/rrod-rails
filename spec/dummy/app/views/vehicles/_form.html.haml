@@ -1,0 +1,14 @@
+= form_for @vehicle do |f|
+  %p
+    = f.label :make
+    = f.text_field :make
+  %p
+    = f.label :model
+    = f.text_field :model
+  %p
+    = f.label :wheels
+    = f.number_field :wheels
+  %p
+    = f.label :color
+    = f.select :color, %w[black blue yellow green red]
+

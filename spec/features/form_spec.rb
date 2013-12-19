@@ -24,7 +24,11 @@ describe "using Rrod::Model in a form" do
   end
 
   describe "schemaless" do
-    it "will allow any attribute to be displayed on the form"
+    it "will allow any attribute to be displayed on the form" do
+      pending
+      visit new_vehicle_path
+      expect(page).to have_selector('form')
+    end
   end
 
 end
