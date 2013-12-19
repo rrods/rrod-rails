@@ -13,6 +13,7 @@ doc/
 lib/bundler/man
 pkg
 rdoc
+spec/support/test_server.yml
 spec/dummy/log
 spec/dummy/tmp
 spec/reports

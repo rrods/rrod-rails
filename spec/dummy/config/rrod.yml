@@ -1,0 +1,9 @@
+---
+development:
+- :host: 0.0.0.0
+test:
+- :host: 0.0.0.0
+  :http_port: 15000
+  :pb_port: 15001
+production:
+- :host: fancy.production.server.1
